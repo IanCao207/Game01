@@ -1,20 +1,21 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour
 {
+    public CharacterController charCtrl;
     public int HP;
 
-    //ªì©l¤Æ
+    //åˆå§‹åŒ–
     void Start()
     {
         HP = 100;
     }
 
-    //§ó·s:°»´ú¾Ş§@
+    //æ›´æ–°:åµæ¸¬æ“ä½œ
     void Update()
-    {   
-        
+    {
+        charCtrl.SimpleMove(Vector3.forward);
     }
 }
