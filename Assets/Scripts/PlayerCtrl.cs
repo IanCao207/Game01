@@ -7,9 +7,12 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class PlayerCtrl : MonoBehaviour
 {
+    #region 基本參數
     public CharacterController charCtrl;
     public int HP;
+    #endregion 基本參數
 
+    #region 生命週期
     //初始化
     void Start()
     {
